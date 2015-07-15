@@ -1,0 +1,11 @@
+#!/usr/bin/python
+# -*- encoding: utf-8 -*-
+
+import sys
+from PokerSocket import *
+
+pokerSocket = PokerSocket((
+    (sys.argv[1], int(sys.argv[2])),
+     (sys.argv[3], int(sys.argv[4])),
+    sys.argv[5]))
+pokerSocket.start()
